@@ -4,6 +4,7 @@
 @import "home";
 @import "about";
 @import "whatwedo";
+@import "contact";
 
 #app {
     font: 11pt 'Calibri', sans-serif;
@@ -13,6 +14,10 @@
 
     h3 {
         font: 18pt 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    h4 {
+        font: 13.5pt 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
 
     #clear-div {
