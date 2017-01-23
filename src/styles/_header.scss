@@ -1,0 +1,39 @@
+@import "colors";
+
+header {
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
+    width: 950px;
+    background-color: $white;
+
+    nav {
+        padding-top: 50px;
+        border-bottom: 1px solid $SynvisusPurple;
+        font-size: 13.5pt;
+
+        & > a {
+            margin: 5px 15px;
+            padding: 10px 10px;
+            color: $SynvisusPurple;
+            display: inline-block;
+            width: 120px;
+            text-align: center;
+        }
+
+        & > a:hover {
+            text-decoration: none;
+            background-color: $SynvisusPurple;
+            color: #e1e1e1;
+        }
+
+        & > a:active {
+            text-decoration: none;
+        }
+
+        & > a.active {
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}

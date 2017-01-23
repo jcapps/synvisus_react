@@ -1,0 +1,27 @@
+@import "header";
+@import "footer";
+@import "home";
+@import "whatwedo";
+
+#app {
+    font: 11pt 'Calibri', sans-serif;
+    color: $SynvisusPurple;
+    margin: 0;
+
+    hr {
+        border-color: $SynvisusPurple;
+    }
+
+    #container {
+        margin: 0 auto;
+        width: 950px;
+        min-width: 950px;
+        padding: 0;
+
+        #page-content {
+            padding: 0;
+            margin-top: 145px;
+            width: 100%;
+        }
+    }
+}

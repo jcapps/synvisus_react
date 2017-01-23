@@ -1,0 +1,62 @@
+#home-page {
+    #jumbotron {
+        padding: 100px 200px;
+        background-color: #c8bed8;
+    }
+
+    #description {
+        .circle-block {
+            @extend circle;
+            background-color: #d9d9d9;
+            float: left;
+        }
+
+        p {
+            margin: 30px 0;
+            float: left;
+            font-size: 14pt;
+            width: 575.1px;
+            line-height: 29px;
+        }
+    }
+
+    #additional-links {
+        width: 100%;
+        table {
+            width: 100%;
+        }
+
+        .circle-block {
+            @extend circle;
+            background-color: $SynvisusPurple;
+            color: $white;
+
+            .circle-words {
+                padding-top: 35px;
+            }
+        }
+
+        .circle-block:hover {
+            @extend circle;
+            background-color: #d9d9d9;
+            color: $SynvisusPurple;
+            text-decoration: none;
+        }
+    }
+
+    .bold-label {
+        font-size: 22pt;
+    }
+
+    circle {
+        display: block;
+        height: 200px;
+        width: 200px;
+        margin: 30px 58.3px;
+        font-size: 22pt;
+        text-align: center;
+        border: 0;
+        border-radius: 50%;
+        box-shadow: 3px 3px 5px 1px #a3a3a3;
+    }
+}

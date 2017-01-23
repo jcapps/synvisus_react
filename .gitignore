@@ -1,0 +1,5 @@
+## Files to ignore when committing/pushing to GitHub
+
+# Ignore modules and build folders
+[Nn]ode_modules/
+[Dd]ist/
