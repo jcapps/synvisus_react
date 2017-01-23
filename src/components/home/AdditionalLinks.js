@@ -8,18 +8,21 @@ const AdditionalLinks = () => {
                 <tbody>
                     <tr>
                         <td>
-                            <Link to="whatwedo" className="circle-block">
+                            <Link to="whatwedo#forecasting-support" className="circle-block">
                                 <p className="circle-words">Forecasting Support</p>
+                                <p className="circle-arrow">&#8594;</p>
                             </Link>
                         </td>
                         <td>
-                            <Link to="whatwedo" className="circle-block">
+                            <Link to="whatwedo#software-development" className="circle-block">
                                 <p className="circle-words">Software Development</p>
+                                <p className="circle-arrow">&#8594;</p>
                             </Link>
                         </td>
                         <td>
-                            <Link to="whatwedo" className="circle-block">
+                            <Link to="whatwedo#operations-management" className="circle-block">
                                 <p className="circle-words">Operations Management</p>
+                                <p className="circle-arrow">&#8594;</p>
                             </Link>
                         </td>
                     </tr>

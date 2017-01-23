@@ -4,6 +4,20 @@ import SoftwareDevelopment from './SoftwareDevelopment';
 import OperationsManagement from './OperationsManagement';
 
 class WhatWeDoPage extends React.Component {
+
+    componentDidMount() {
+        const path = window.location.href;
+        const pathSplits = path.split('#');
+        if (pathSplits.length == 2) {
+            const section = pathSplits[1];
+            const header = document.querySelector('header');
+            const element = document.querySelector(`#${section}`);
+            window.scrollTo(0, element.offsetTop - header.offsetHeight);
+        } else {
+            window.scrollTo(0, 0);
+        }
+    }
+
     render() {
         return (
             <div id="what-we-do-page">
