@@ -1,3 +1,4 @@
+@import "colors";
 @import "header";
 @import "footer";
 @import "home";
@@ -7,7 +8,7 @@
 #app {
     font: 11pt 'Calibri', sans-serif;
     line-height: 1.428571429;
-    color: $SynvisusPurple;
+    color: $synvisus-purple;
     margin: 0;
 
     h3 {
@@ -19,7 +20,7 @@
     }
 
     hr {
-        border-color: $SynvisusPurple;
+        border-color: $synvisus-purple;
     }
 
     #container {

@@ -7,9 +7,9 @@
     #description {
         .circle-block {
             @extend circle;
-            background-color: #d9d9d9;
+            background-color: $synvisus-gray;
             float: left;
-            box-shadow: 3px 3px 5px 1px #a3a3a3;
+            box-shadow: 3px 3px 5px 1px $shadow;
         }
 
         p {
@@ -29,9 +29,9 @@
 
         .circle-block {
             @extend circle;
-            background-color: $SynvisusPurple;
+            background-color: $synvisus-purple;
             color: $white;
-            box-shadow: 3px 3px 5px 1px #a3a3a3;
+            box-shadow: 3px 3px 5px 1px $shadow;
 
             .circle-words {
                 padding-top: 40px;
@@ -44,13 +44,13 @@
 
         .circle-block:hover {
             @extend circle;
-            background-color: #d9d9d9;
-            color: $SynvisusPurple;
+            background-color: $synvisus-gray;
+            color: $synvisus-purple;
             text-decoration: none;
         }
 
         .circle-block:active {
-            box-shadow: inset 3px 3px 5px #a3a3a3;
+            box-shadow: inset 3px 3px 5px $shadow;
         }
     }
 
