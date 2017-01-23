@@ -1,12 +1,22 @@
 @import "header";
 @import "footer";
 @import "home";
+@import "about";
 @import "whatwedo";
 
 #app {
     font: 11pt 'Calibri', sans-serif;
+    line-height: 1.428571429;
     color: $SynvisusPurple;
     margin: 0;
+
+    h3 {
+        font: 18pt 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    #clear-div {
+        clear: both;
+    }
 
     hr {
         border-color: $SynvisusPurple;

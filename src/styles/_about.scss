@@ -1,0 +1,77 @@
+#about-page {
+    h3.section-header {
+        padding: 15px 0;
+    }
+
+    p {
+        font-size: 13.5pt;
+    }
+
+    #mission-statement {
+        p {
+            margin: 0 30px 10px 30px;
+        }
+    }
+    
+    #value-proposition {
+        #proposition-container {
+            position: relative;
+
+            #business-insights {
+                float: left;
+                width: 35%;
+                padding: 5px 0 10px 30px;
+                text-align: left;
+                background-color: #ededed;
+            }
+
+            #left-chevron {
+                float: left;
+                border-top: 155px solid transparent;
+                border-left: 114px solid #ededed;
+                border-bottom: 155px solid transparent;
+                margin-right: 28.5px;
+            }
+
+            #practical-solutions {
+                position: absolute;
+                height: 240px;
+                width: 240px;
+                top: 35px;
+                left: 355px;
+                background-color: $SynvisusPurple;
+                color: $white;
+                text-align: center;
+                border-radius: 50%;
+
+                h3 {
+                    margin: 25px 20px 0 20px;
+                }
+
+                p {
+                    margin: 18px 20px 0 20px;
+                }
+            }
+
+            #right-chevron {
+                float: left;
+                border-top: 155px solid transparent;
+                border-right: 114px solid #ededed;
+                border-bottom: 155px solid transparent;
+                margin-left: 28.5px;
+            }
+
+            #technical-capabilities {
+                float: left;
+                width: 35%;
+                padding: 5px 30px 10px 0;
+                text-align: left;
+                background-color: #ededed;
+
+                h3 {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

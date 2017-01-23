@@ -1,12 +1,13 @@
 import React from 'react';
+import MissionStatement from './MissionStatement.js';
+import ValueProposition from './ValueProposition.js';
 
 class AboutPage extends React.Component {
     render() {
         return (
-            <div>
-                <h1>About</h1>
-                <p>This application uses React, Redux, React Router and a 
-                variety of other helpful libraries</p>
+            <div id="about-page">
+                <MissionStatement/>
+                <ValueProposition/>
             </div>
         );
     }
