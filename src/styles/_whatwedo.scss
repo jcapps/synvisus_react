@@ -2,8 +2,22 @@
     table {
         width: 100%;
 
+        td {
+            padding: 10px 35px 20px 35px;
+        }
+
         td.what-words {
             width: 60%;
+
+            h3 {
+                font-size: 18pt;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+
+            p {
+                font-size: 12pt;
+                line-height: 1.428571429;
+            }
         }
 
         td.what-image {
