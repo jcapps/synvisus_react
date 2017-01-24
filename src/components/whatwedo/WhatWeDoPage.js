@@ -6,6 +6,7 @@ import OperationsManagement from './OperationsManagement';
 class WhatWeDoPage extends React.Component {
 
     componentDidMount() {
+        document.title = "Synvisus: What We Do";
         const path = window.location.href;
         const pathSplits = path.split('#');
         if (pathSplits.length == 2) {

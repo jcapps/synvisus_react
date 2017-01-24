@@ -3,6 +3,7 @@ import ContactForm from './ContactForm';
 
 class ContactUsPage extends React.Component {
     componentDidMount() {
+        document.title = "Synvisus: Contact Us";
         window.scrollTo(0, 0);
     }
 

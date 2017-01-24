@@ -5,6 +5,7 @@ import AdditionalLinks from './AdditionalLinks';
 
 class HomePage extends React.Component {
     componentDidMount() {
+        document.title = "Synvisus: Home";
         window.scrollTo(0, 0);
     }
 

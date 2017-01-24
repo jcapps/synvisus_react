@@ -4,6 +4,7 @@ import ValueProposition from './ValueProposition.js';
 
 class AboutPage extends React.Component {
     componentDidMount() {
+        document.title = "Synvisus: About";
         window.scrollTo(0, 0);
     }
 
