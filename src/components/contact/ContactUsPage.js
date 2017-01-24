@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from './ContactForm';
 
 class ContactUsPage extends React.Component {
     componentDidMount() {
@@ -21,20 +22,7 @@ class ContactUsPage extends React.Component {
                 </p>
                 <br/>
                 <h4>By E-mail</h4>
-                <table>
-                    <tbody>
-                        <tr><td className="email-label">Name</td></tr>
-                        <tr><td><input maxLength="25"/></td></tr>
-                        <tr><td><span>First</span></td></tr>
-                        <tr><td><input maxLength="25"/></td></tr>
-                        <tr><td><span>Last</span></td></tr>
-                        <tr><td className="email-label">E-mail Address</td></tr>
-                        <tr><td><input maxLength="50"/></td></tr>
-                        <tr><td className="email-label">Message</td></tr>
-                        <tr><td><textarea rows="8" cols="40"></textarea></td></tr>
-                        <tr><td><button>Send</button></td></tr>
-                    </tbody>
-                </table>
+                <ContactForm/>
             </div>
         );
     }
