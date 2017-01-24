@@ -70,7 +70,7 @@ class ContactForm extends React.Component {
                         <tr><td><TextInput name="first-name" label="First Name" error={this.state.errors.firstName}/></td></tr>
                         <tr><td><TextInput name="last-name" label="Last Name" error={this.state.errors.lastName}/></td></tr>
                         <tr><td><TextInput name="email-address" label="E-mail Address" error={this.state.errors.emailAddress}/></td></tr>
-                        <tr><td><TextArea name="email-message" label="Message" rows="8" cols="40" error={this.state.errors.emailMessage}/></td></tr>
+                        <tr><td><TextArea name="email-message" label="Message" rows="8" cols="80" error={this.state.errors.emailMessage}/></td></tr>
                         <tr><td><button className="btn btn-primary" type="submit" onClick={this.sendEmail}>Send E-mail</button></td></tr>
                     </tbody>
                 </table>
