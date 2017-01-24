@@ -6,6 +6,10 @@
 @import "whatwedo";
 @import "contact";
 
+body {
+    margin: 0;
+}
+
 #app {
     font: 11pt 'Calibri', sans-serif;
     line-height: 1.428571429;
@@ -20,12 +24,12 @@
         font: 13.5pt 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
 
-    #clear-div {
-        clear: both;
+    p {
+        margin: 0;
     }
 
-    hr {
-        border-color: $synvisus-purple;
+    #clear-div {
+        clear: both;
     }
 
     #container {

@@ -17,21 +17,16 @@ header {
             display: inline-block;
             width: 120px;
             text-align: center;
+            text-decoration: none;
         }
 
         & > a:hover {
-            text-decoration: none;
             background-color: $synvisus-purple;
             color: $light-gray;
         }
 
-        & > a:active {
-            text-decoration: none;
-        }
-
         & > a.active {
             font-weight: bold;
-            text-decoration: none;
         }
     }
 }
