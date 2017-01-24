@@ -9,7 +9,7 @@ const TextArea = ({name, label, rows, cols, onChange, value, error}) => {
     return (
         <div className={wrapperClass}>
             <label htmlFor={name}>{label}</label>
-            <div className="field">
+            <div className="textarea-field">
                 <textarea
                     type="text"
                     id={name}

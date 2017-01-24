@@ -7,9 +7,26 @@
         font-size: 15pt;
     }
 
-    table {
-        .email-label {
-            font-weight: bold;
+    form {
+        .input-field {
+            .form-control, 
+            .alert-danger {
+                width: 250px;
+            }
+        }
+
+        .btn-primary {
+            font-size: 13.5pt;
+            background-color: #664185;
+            border-color: $synvisus-purple;
+        }
+
+        .btn-primary:hover {
+            background-color: #462165;
+        }
+
+        .btn-primary:active {
+            background-color: $synvisus-purple;
         }
     }
 }
