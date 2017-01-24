@@ -3,11 +3,7 @@ import {Link} from 'react-router';
 
 const Jumbotron = () => {
     return (
-        <div id="jumbotron">
-            <h1>My App</h1>
-            <p>Practicing React Web Development</p>
-            <Link to="about" className="btn btn-primary btn-lg">Learn more</Link>
-        </div>
+        <img id="banner" src={require("../../images/OwlBanner.png")} alt="Gallery photo" />
     );
 };
 
