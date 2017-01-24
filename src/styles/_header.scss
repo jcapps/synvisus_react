@@ -5,17 +5,31 @@ header {
     width: 950px;
     background-color: $white;
 
+    #logos-container {
+        #logo {
+            height: 45px;
+            float: left;
+        }
+
+        #motto {
+            height: 45px;
+            float: right;
+        }
+    }
+
     nav {
-        padding-top: 50px;
+        clear: both;
+        padding-top: 20px;
+        padding-bottom: 5px;
         border-bottom: 1px solid $synvisus-purple;
         font-size: 13.5pt;
 
         & > a {
-            margin: 5px 15px;
+            margin: 0 15px;
             padding: 10px 10px;
             color: $synvisus-purple;
             display: inline-block;
-            width: 120px;
+            width: 100px;
             text-align: center;
             text-decoration: none;
         }

@@ -1,22 +1,15 @@
 import React, {PropTypes} from 'react';
 import { Link, IndexLink } from 'react-router';
+import Logos from './Logos';
+import NavBar from './NavBar';
 
-const Header = ({loading}) => {
+const Header = () => {
     return (
         <header>
-            <nav>
-                <IndexLink to="/" activeClassName="active">Home</IndexLink>
-                <Link to="/about" activeClassName="active">About Us</Link>
-                <Link to="/whatwedo" activeClassName="active">What We Do</Link>
-                <Link to="/courses" activeClassName="active">Courses</Link>
-                <Link to="/contact" activeClassName="active">Contact Us</Link>
-            </nav>
+            <Logos/>
+            <NavBar/>
         </header>
     );
-};
-
-Header.propTypes = {
-    loading: PropTypes.bool.isRequired
 };
 
 export default Header;
