@@ -21,6 +21,15 @@
             font-size: 14pt;
             width: 575.1px;
             line-height: 29px;
+
+            #watch-demo {
+                color: $synvisus-purple;
+                text-decoration: underline;
+            }
+
+            #watch-demo:hover {
+                color: $shadow;
+            }
         }
     }
 
