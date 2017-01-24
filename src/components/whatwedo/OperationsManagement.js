@@ -2,6 +2,9 @@ import React from 'react';
 
 class OperationsManagement extends React.Component {
     render() {
+
+        const image = require("../../images/OperationsManagementClipArt.png");
+
         return (
             <table id="operations-management">
                 <tbody>
@@ -21,7 +24,9 @@ class OperationsManagement extends React.Component {
                                 operations management system.
                             </p>
                         </td>
-                        <td className="what-image"></td>
+                        <td className="what-image">
+                            <img id="operations-management-image" src={image} alt="Topic Picture"/>
+                        </td>
                     </tr>
                 </tbody>
             </table>

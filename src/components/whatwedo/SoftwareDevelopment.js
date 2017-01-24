@@ -2,11 +2,16 @@ import React from 'react';
 
 class SoftwareDevelopment extends React.Component {
     render() {
+
+        const image = require("../../images/SoftwareDevelopmentClipArt.png");
+
         return (
             <table id="software-development">
                 <tbody>
                     <tr>
-                        <td className="what-image"></td>
+                        <td className="what-image">
+                            <img id="software-development-image" src={image} alt="Topic Picture"/>
+                        </td>
                         <td className="what-words">
                             <h3>Software Development</h3>
                             <p>

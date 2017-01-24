@@ -2,6 +2,9 @@ import React from 'react';
 
 class ForecastingSupport extends React.Component {
     render() {
+
+        const image = require("../../images/ForecastingSupportClipArt.png");
+
         return (
             <table id="forecasting-support">
                 <tbody>
@@ -23,7 +26,9 @@ class ForecastingSupport extends React.Component {
                                 sources of risk and uncertainty.
                             </p>
                         </td>
-                        <td className="what-image"></td>
+                        <td className="what-image">
+                            <img id="forecasting-support-image" src={image} alt="Topic Picture"/>
+                        </td>
                     </tr>
                 </tbody>
             </table>

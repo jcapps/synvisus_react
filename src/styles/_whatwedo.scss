@@ -1,4 +1,8 @@
 #what-we-do-page {
+    p {
+        font-size: 12pt;
+    }
+
     table {
         width: 100%;
 
@@ -18,5 +22,23 @@
     #forecasting-support,
     #operations-management {
         background-color: $light-gray;
+    }
+
+    #forecasting-support-image {
+        height: 275px;
+        width: 235px;
+        margin: 15px 0 5px 17px;
+    }
+
+    #software-development-image {
+        height: 290px;
+        width: 332px;
+        margin-top: 15px;
+    }
+
+    #operations-management-image {
+        height: 258px;
+        width: 209px;
+        margin: 15px 0 5px 39px;
     }
 }
