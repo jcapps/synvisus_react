@@ -1,6 +1,10 @@
 import React from 'react';
 
 class ContactUsPage extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <div id="contact-page">

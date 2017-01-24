@@ -3,6 +3,10 @@ import MissionStatement from './MissionStatement.js';
 import ValueProposition from './ValueProposition.js';
 
 class AboutPage extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <div id="about-page">
