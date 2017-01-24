@@ -1,5 +1,6 @@
 import webpack from 'webpack';
 import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
   debug: true,
@@ -21,7 +22,13 @@ export default {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Synvisus',
+      favicon: 'src/images/favicon.ico',
+      template: 'src/index.html',
+      inject: false
+    })
   ],
   module: {
     loaders: [
