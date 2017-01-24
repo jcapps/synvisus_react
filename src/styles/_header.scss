@@ -27,16 +27,16 @@ header {
         & > a {
             margin: 0 15px;
             padding: 10px 10px;
-            color: $synvisus-purple;
+            color: $synvisus-purple !important; // override bootstrap
             display: inline-block;
-            width: 100px;
+            width: 120px;
             text-align: center;
-            text-decoration: none;
+            text-decoration: none !important; // override bootstrap
         }
 
         & > a:hover {
             background-color: $synvisus-purple;
-            color: $light-gray;
+            color: $light-gray !important; // override bootstrap
         }
 
         & > a.active {
