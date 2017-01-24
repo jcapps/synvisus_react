@@ -1,4 +1,5 @@
 @import "colors";
+@import "defaults";
 @import "header";
 @import "footer";
 @import "home";
@@ -6,41 +7,29 @@
 @import "whatwedo";
 @import "contact";
 
-body {
-    margin: 0;
-}
+body { margin: 0; }
 
 #app {
-    font: 11pt 'Calibri', sans-serif;
-    line-height: 1.428571429;
+    font: $font;
+    line-height: $line-height;
     color: $synvisus-purple;
     margin: 0;
 
-    h3 {
-        font: 18pt 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
+    h3 { font: $h3-font; }
+    h4 { font: $h4-font; }
+    p { margin: 0; }
 
-    h4 {
-        font: 13.5pt 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-
-    p {
-        margin: 0;
-    }
-
-    #clear-div {
-        clear: both;
-    }
+    #clear-div { clear: both; }
 
     #container {
         margin: 0 auto;
-        width: 950px;
-        min-width: 950px;
+        width: $page-width;
+        min-width: $page-width;
         padding: 0;
 
         #page-content {
             padding: 0;
-            margin-top: 145px;
+            margin-top: $page-top-margin;
             width: 100%;
         }
     }

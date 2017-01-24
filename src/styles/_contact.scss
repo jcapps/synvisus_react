@@ -28,5 +28,10 @@
         .btn-primary:active {
             background-color: $synvisus-purple;
         }
+
+        textarea {
+            resize: both;
+            max-width: $page-width;
+        }
     }
 }
