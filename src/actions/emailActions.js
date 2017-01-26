@@ -1,4 +1,5 @@
 import * as types from './actionTypes';
+import emailApi from '../api/mockEmailApi';
 import {beginAjaxCall, ajaxCallError} from './ajaxStatusActions';
 
 export function sendEmailSuccess() {
@@ -8,15 +9,11 @@ export function sendEmailSuccess() {
 export function sendEmail(email) {
     return function (dispatch, getState) {
         dispatch(beginAjaxCall());
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(true);
-            }, 1000).then(() => {
-                dispatch(sendEmailSuccess());
-            }).catch(error => {
-                dispatch(ajaxCallError(error));
-                throw(error);
-            });
+        return emailApi.sendEmail(email).then(() => {
+            dispatch(sendEmailSuccess());
+        }).catch(error => {
+            dispatch(ajaxCallError(error));
+            throw(error);
         });
     };
 }

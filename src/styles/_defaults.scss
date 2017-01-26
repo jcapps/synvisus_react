@@ -4,3 +4,9 @@ $font: 11pt 'Calibri', sans-serif;
 $line-height: 1.428571429;
 $h3-font: 18pt 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $h4-font: 13.5pt 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+.toastr-center {
+    top: calc(50% - 28px);
+    left: calc(50% - 150px);
+    margin: 0 auto;
+}
