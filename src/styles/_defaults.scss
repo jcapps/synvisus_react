@@ -10,3 +10,12 @@ $h4-font: 13.5pt 'Helvetica Neue', Helvetica, Arial, sans-serif;
     left: calc(50% - 150px);
     margin: 0 auto;
 }
+
+h3 { font: $h3-font; }
+h4 { font: $h4-font; }
+p { margin: 0; }
+
+h3.section-header {
+    padding: 15px 0;
+}
+    

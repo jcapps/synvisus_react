@@ -74,7 +74,7 @@ class ContactUsPage extends React.Component {
     render() {
         return (
             <div id="contact-page">
-                <h3><b>Contact Us</b></h3>
+                <h3 className="section-header"><b>Contact Us</b></h3>
                 <p>We encourage you to contact us with any inquiries or to set up a consultation.</p>
                 <br/>
                 <h4>By Phone</h4>
