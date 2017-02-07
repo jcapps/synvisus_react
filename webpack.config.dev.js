@@ -35,7 +35,11 @@ export default {
       {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel']},
       {test: /(\.css)$/, loaders: ['style', 'css']},
       {test: /(\.scss)$/, loaders: ['style', 'css', 'sass']},
-      {test: /\.(jpe?g|ico|gif|png|svg|eot|woff|woff2|ttf)$/, loader: 'file', options: {name: '[path][name].[hash].[ext]'}}
+      {
+        test: /\.(jpe?g|ico|gif|png|svg|mp4|ogv|webm|eot|woff|woff2|ttf)$/, 
+        loader: 'file', 
+        options: {name: '[path][name].[hash].[ext]'}
+      }
     ]
   }
 };

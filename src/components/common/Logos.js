@@ -1,16 +1,14 @@
 import React, {PropTypes} from 'react';
 import { Link, IndexLink } from 'react-router';
+import getBrowserInfo from '../../helpers/getBrowserInfo';
 
 const Logos = () => {
-    const isInternetExplorerOrEdge = () => {
-        return navigator.appName == 'Microsoft Internet Explorer' 
-            || (navigator.appName == "Netscape" && navigator.appVersion.indexOf('Edge') > -1);
-    };
+    const browser = getBrowserInfo();
 
     let logo = require("../../images/SynvisusLogo.png");
     let motto = require("../../images/Motto.png");
 
-    if (isInternetExplorerOrEdge) {
+    if (browser == "IE" || browser == "Edge") {
         logo = require("../../images/SynvisusLogoIE.png");
         motto = require("../../images/MottoIE.png");
     }
@@ -24,7 +22,5 @@ const Logos = () => {
         </div>
     );
 };
-
-
 
 export default Logos;

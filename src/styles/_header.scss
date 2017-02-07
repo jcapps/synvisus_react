@@ -4,6 +4,7 @@ header {
     padding-top: 10px;
     width: $page-width;
     background-color: $white;
+    z-index: 1;
 
     #logos-container {
         #logo {

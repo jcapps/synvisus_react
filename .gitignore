@@ -3,3 +3,6 @@
 # Ignore modules and build folders
 [Nn]ode_modules/
 [Dd]ist/
+
+#Ignore videos
+[Vv]ideos
