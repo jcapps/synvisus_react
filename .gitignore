@@ -4,5 +4,8 @@
 [Nn]ode_modules/
 [Dd]ist/
 
-#Ignore videos
+# Ignore private information
+[Pp]rivate
+
+# Ignore videos
 [Vv]ideos

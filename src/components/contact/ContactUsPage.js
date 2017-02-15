@@ -10,7 +10,6 @@ class ContactUsPage extends React.Component {
         super(props);
 
         this.state = {
-            email: {},
             errors: {},
             isSending: false
         };
@@ -24,42 +23,64 @@ class ContactUsPage extends React.Component {
         window.scrollTo(0, 0);
     }
 
+    clearFields() {
+        document.querySelector('#first-name').value = '';
+        document.querySelector('#last-name').value = '';
+        document.querySelector('#email-address').value = '';
+        document.querySelector('#email-message').value = '';
+    }
+
     contactFormIsValid() {
         let formIsValid = true;
         let errors = {};
+        let email = {
+            firstName: document.querySelector('#first-name').value,
+            lastName: document.querySelector('#last-name').value,
+            emailAddress: document.querySelector('#email-address').value,
+            message: document.querySelector('#email-message').value
+        };
 
-        if (document.querySelector('#first-name').value.length == 0) {
+        if (email.firstName.length == 0) {
             errors.firstName = 'Please enter a First Name.';
             formIsValid = false;
         }
 
-        if (document.querySelector('#last-name').value.length == 0) {
+        if (email.lastName.length == 0) {
             errors.lastName = 'Please enter a Last Name.';
             formIsValid = false;
         }
 
-        if (document.querySelector('#email-address').value.length == 0) {
+        if (email.emailAddress.length == 0) {
             errors.emailAddress = 'Please enter an E-mail Address.';
             formIsValid = false;
+        } else {
+            const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            let isEmailValid = regex.test(email.emailAddress);
+            if (!isEmailValid) {
+                errors.emailAddress = 'Not a valid E-mail Address.';
+                formIsValid = false;
+            }
         }
 
-        if (document.querySelector('#email-message').value.length == 0) {
+        if (email.message.length == 0) {
             errors.emailMessage = 'Please enter an E-mail Message.';
             formIsValid = false;
         }
 
         this.setState({errors: errors});
-        return formIsValid;
+        return {isValid: formIsValid, email: email};
     }
 
     sendEmail(event) {
         event.preventDefault();
         this.setState({isSending: true});
 
-        if(this.contactFormIsValid()) {
-            this.props.actions.sendEmail(this.state.email)
+        let validationResults = this.contactFormIsValid();
+        if(validationResults.isValid) {
+            this.props.actions.sendEmail(validationResults.email)
                 .then(() => {
                     toastr.success("Email sent successfully.");
+                    this.clearFields();
                     this.setState({isSending: false});
                 })
                 .catch(error => {
