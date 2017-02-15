@@ -1,1 +1,1 @@
-"README.md" file for practice WebPack
+Synvisus LLC Web application
