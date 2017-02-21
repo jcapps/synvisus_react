@@ -1,8 +1,4 @@
-'use strict';
 import axios from 'axios';
-
-const KEY = process.env.MAILGUN_KEY;
-const DOMAIN = process.env.MAILGUN_DOMAIN;
 
 class EmailApi {
     static sendEmail(email) {
